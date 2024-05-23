@@ -5,7 +5,7 @@ from pathlib import Path # usando apenas pra extrair minha api_key
 API_KEY = Path('/home/asuka5900/API_KEY').read_text().rstrip()
 
 genai.configure(api_key=API_KEY)
-model = genai.GenerativeModel('gemini-pro')
+model = genai.GenerativeModel('gemini-1.5-flash-latest')
 
 chat = model.start_chat()
 while True:
